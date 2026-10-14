@@ -31,10 +31,17 @@ OpenCode V1 does NOT extract commands from npm plugin packages, so
 
 ## Maintainer: publishing
 
+Published 2026-10-14: `@motiondevlab/opencode-session-autosave@0.1.0`,
+`@motiondevlab/opencode-git-noninteractive-env@0.1.0` (public).
+Auth is a granular token in `~/.npmrc` (bypasses 2FA for publish).
+
 ```bash
-npm whoami            # must be logged in (npm adduser)
-npm run publish:all   # TODO: release script (per-package npm publish + git tag)
+npm publish -w @motiondevlab/opencode-session-autosave --access public
+npm publish -w @motiondevlab/opencode-git-noninteractive-env --access public
 ```
+
+Note: `npm publish` must run via `-w` from the repo root — bare
+`npm publish` inside a workspace dir fails with ENOWORKSPACES.
 
 No secrets in this repo — scan `*.ps1`, `*.jsonc`, `*.md` for tokens before push.
 PowerShell worker scripts stay **ASCII only** (5.1 misreads UTF-8 without BOM).
