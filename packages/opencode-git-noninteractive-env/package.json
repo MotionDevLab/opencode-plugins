@@ -1,0 +1,20 @@
+{
+  "name": "@motiondevlab/opencode-git-noninteractive-env",
+  "version": "0.1.0",
+  "description": "Non-interactive git environment for OpenCode bash-tool calls under PowerShell (OpenCode V1 only).",
+  "type": "module",
+  "main": "./index.js",
+  "files": [
+    "index.js",
+    ".opencode-plugin/plugin.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@opencode-ai/plugin": "1.19.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}

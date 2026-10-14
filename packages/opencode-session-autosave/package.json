@@ -1,0 +1,23 @@
+{
+  "name": "@motiondevlab/opencode-session-autosave",
+  "version": "0.1.0",
+  "description": "Automatic background session checkpoints for OpenCode (time-based safety net).",
+  "type": "module",
+  "main": "./index.js",
+  "files": [
+    "index.js",
+    "autosave-worker.ps1",
+    "commands",
+    "scripts",
+    ".opencode-plugin/plugin.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@opencode-ai/plugin": "1.19.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}

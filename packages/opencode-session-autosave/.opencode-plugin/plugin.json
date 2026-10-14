@@ -1,0 +1,5 @@
+{
+  "name": "opencode-session-autosave",
+  "version": "0.1.0",
+  "description": "Automatic background session checkpoints for OpenCode (time-based safety net)."
+}
